@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Instagram Stories Feature
 
-## Getting Started
+This project implements an Instagram stories feature using Next.js and TypeScript.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```bash
+   git clone <https://github.com/mdmaroof/instagramStory.git>
+   cd instagram-stories
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```bash
+   yarn add
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+   ```bash
+   yarn dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Run tests:
+   ```bash
+   yarn test
+   ```
 
-## Learn More
+## Design Choices
 
-To learn more about Next.js, take a look at the following resources:
+- **Performance**: Preloaded images and efficient state management to ensure smooth transitions and minimal delays.
+- **Scalability**: Modular component design and API abstraction to easily extend features and support larger datasets.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Assumptions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- The backend API serves a static list of stories without database interactions.
+- The application is optimized for mobile view and may not be fully responsive on desktop screens.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application is deployed using Vercel. You can access it [here](https://instagram-story-three.vercel.app/).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Author
+
+Mohd Maroof
